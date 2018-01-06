@@ -1,0 +1,7 @@
+D:\C#\DemoTypeConversion\DemoTypeConversion\bin\Debug\DemoTypeConversion.exe.config
+D:\C#\DemoTypeConversion\DemoTypeConversion\bin\Debug\DemoTypeConversion.exe
+D:\C#\DemoTypeConversion\DemoTypeConversion\bin\Debug\DemoTypeConversion.pdb
+D:\C#\DemoTypeConversion\DemoTypeConversion\obj\Debug\DemoTypeConversion.csprojResolveAssemblyReference.cache
+D:\C#\DemoTypeConversion\DemoTypeConversion\obj\Debug\DemoTypeConversion.csproj.CoreCompileInputs.cache
+D:\C#\DemoTypeConversion\DemoTypeConversion\obj\Debug\DemoTypeConversion.exe
+D:\C#\DemoTypeConversion\DemoTypeConversion\obj\Debug\DemoTypeConversion.pdb
