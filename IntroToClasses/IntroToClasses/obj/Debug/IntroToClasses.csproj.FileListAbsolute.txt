@@ -1,0 +1,6 @@
+D:\SV_training\forGit\IntroToClasses\IntroToClasses\bin\Debug\IntroToClasses.exe.config
+D:\SV_training\forGit\IntroToClasses\IntroToClasses\bin\Debug\IntroToClasses.exe
+D:\SV_training\forGit\IntroToClasses\IntroToClasses\bin\Debug\IntroToClasses.pdb
+D:\SV_training\forGit\IntroToClasses\IntroToClasses\obj\Debug\IntroToClasses.csprojResolveAssemblyReference.cache
+D:\SV_training\forGit\IntroToClasses\IntroToClasses\obj\Debug\IntroToClasses.exe
+D:\SV_training\forGit\IntroToClasses\IntroToClasses\obj\Debug\IntroToClasses.pdb
