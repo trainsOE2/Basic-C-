@@ -22,6 +22,7 @@ namespace IntroToClasses
             var person = new Person();
             person.name = "Megha";
             person.Introduce("Mosh");
+            Console.ReadKey();
 
         }
     }
