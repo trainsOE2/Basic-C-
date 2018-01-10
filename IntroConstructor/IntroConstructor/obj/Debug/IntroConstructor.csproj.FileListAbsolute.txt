@@ -1,0 +1,6 @@
+D:\SV_training\forGit\IntroConstructor\IntroConstructor\bin\Debug\IntroConstructor.exe.config
+D:\SV_training\forGit\IntroConstructor\IntroConstructor\obj\Debug\IntroConstructor.csprojResolveAssemblyReference.cache
+D:\SV_training\forGit\IntroConstructor\IntroConstructor\bin\Debug\IntroConstructor.exe
+D:\SV_training\forGit\IntroConstructor\IntroConstructor\bin\Debug\IntroConstructor.pdb
+D:\SV_training\forGit\IntroConstructor\IntroConstructor\obj\Debug\IntroConstructor.exe
+D:\SV_training\forGit\IntroConstructor\IntroConstructor\obj\Debug\IntroConstructor.pdb
