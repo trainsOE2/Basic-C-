@@ -16,6 +16,9 @@ namespace IntroConstructor
         {
             this.Name = name;
         }*/
+        public Customer()
+        {
+        }
 
         public Customer(int id)
         {
