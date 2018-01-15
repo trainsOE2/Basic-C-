@@ -1,0 +1,6 @@
+D:\SV_training\forGit\AccessModifiers\AccessModifiers\bin\Debug\AccessModifiers.exe.config
+D:\SV_training\forGit\AccessModifiers\AccessModifiers\bin\Debug\AccessModifiers.exe
+D:\SV_training\forGit\AccessModifiers\AccessModifiers\bin\Debug\AccessModifiers.pdb
+D:\SV_training\forGit\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.csprojResolveAssemblyReference.cache
+D:\SV_training\forGit\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.exe
+D:\SV_training\forGit\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.pdb
