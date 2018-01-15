@@ -1,0 +1,6 @@
+D:\SV_training\forGit\Fields\Fields\bin\Debug\Fields.exe.config
+D:\SV_training\forGit\Fields\Fields\obj\Debug\Fields.csprojResolveAssemblyReference.cache
+D:\SV_training\forGit\Fields\Fields\bin\Debug\Fields.exe
+D:\SV_training\forGit\Fields\Fields\bin\Debug\Fields.pdb
+D:\SV_training\forGit\Fields\Fields\obj\Debug\Fields.exe
+D:\SV_training\forGit\Fields\Fields\obj\Debug\Fields.pdb
