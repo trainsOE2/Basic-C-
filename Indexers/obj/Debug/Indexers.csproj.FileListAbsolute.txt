@@ -1,0 +1,6 @@
+C:\Users\Training\Desktop\TRAINING_BALAJI\Indexers\bin\Debug\Indexers.exe.config
+C:\Users\Training\Desktop\TRAINING_BALAJI\Indexers\bin\Debug\Indexers.exe
+C:\Users\Training\Desktop\TRAINING_BALAJI\Indexers\bin\Debug\Indexers.pdb
+C:\Users\Training\Desktop\TRAINING_BALAJI\Indexers\obj\Debug\Indexers.csprojResolveAssemblyReference.cache
+C:\Users\Training\Desktop\TRAINING_BALAJI\Indexers\obj\Debug\Indexers.exe
+C:\Users\Training\Desktop\TRAINING_BALAJI\Indexers\obj\Debug\Indexers.pdb
