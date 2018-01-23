@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MongoDB.Driver;
+using MongoDB.Driver.GridFS;
 using RealEstate.Properties;
 using MongoDB.Bson;
 
@@ -21,8 +22,13 @@ namespace RealEstate.Controllers
         }
         public ActionResult Index()
         {
-            return Json(database.server.BuildInfo, JsonRequestBehavior.AllowGet);
+            //database.GetStats();
+            var command = new CommandDocument { { "dbStats", 1 }, { "scale", 1 } };
+            var result = database.RunCommand<BsonDocument>(command);
+            return Json(database, JsonRequestBehavior.AllowGet);
+
         }
+        
 
         public ActionResult About()
         {
