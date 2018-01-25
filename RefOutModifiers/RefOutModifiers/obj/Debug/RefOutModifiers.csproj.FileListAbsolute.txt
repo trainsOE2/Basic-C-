@@ -1,0 +1,6 @@
+D:\SV_training\forGit\RefOutModifiers\RefOutModifiers\bin\Debug\RefOutModifiers.exe.config
+D:\SV_training\forGit\RefOutModifiers\RefOutModifiers\obj\Debug\RefOutModifiers.csprojResolveAssemblyReference.cache
+D:\SV_training\forGit\RefOutModifiers\RefOutModifiers\bin\Debug\RefOutModifiers.exe
+D:\SV_training\forGit\RefOutModifiers\RefOutModifiers\bin\Debug\RefOutModifiers.pdb
+D:\SV_training\forGit\RefOutModifiers\RefOutModifiers\obj\Debug\RefOutModifiers.exe
+D:\SV_training\forGit\RefOutModifiers\RefOutModifiers\obj\Debug\RefOutModifiers.pdb

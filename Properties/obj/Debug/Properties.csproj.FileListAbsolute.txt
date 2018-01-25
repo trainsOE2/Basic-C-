@@ -1,0 +1,6 @@
+C:\Users\Training\Desktop\TRAINING_BALAJI\Properties\bin\Debug\Properties.exe.config
+C:\Users\Training\Desktop\TRAINING_BALAJI\Properties\bin\Debug\Properties.exe
+C:\Users\Training\Desktop\TRAINING_BALAJI\Properties\bin\Debug\Properties.pdb
+C:\Users\Training\Desktop\TRAINING_BALAJI\Properties\obj\Debug\Properties.csprojResolveAssemblyReference.cache
+C:\Users\Training\Desktop\TRAINING_BALAJI\Properties\obj\Debug\Properties.exe
+C:\Users\Training\Desktop\TRAINING_BALAJI\Properties\obj\Debug\Properties.pdb
