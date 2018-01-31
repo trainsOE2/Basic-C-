@@ -1,0 +1,11 @@
+D:\C#\readWrite\readWrite\bin\Debug\netcoreapp2.0\readWrite.deps.json
+D:\C#\readWrite\readWrite\bin\Debug\netcoreapp2.0\readWrite.runtimeconfig.json
+D:\C#\readWrite\readWrite\bin\Debug\netcoreapp2.0\readWrite.runtimeconfig.dev.json
+D:\C#\readWrite\readWrite\bin\Debug\netcoreapp2.0\readWrite.dll
+D:\C#\readWrite\readWrite\bin\Debug\netcoreapp2.0\readWrite.pdb
+D:\C#\readWrite\readWrite\obj\Debug\netcoreapp2.0\readWrite.csprojResolveAssemblyReference.cache
+D:\C#\readWrite\readWrite\obj\Debug\netcoreapp2.0\readWrite.csproj.CoreCompileInputs.cache
+D:\C#\readWrite\readWrite\obj\Debug\netcoreapp2.0\readWrite.AssemblyInfoInputs.cache
+D:\C#\readWrite\readWrite\obj\Debug\netcoreapp2.0\readWrite.AssemblyInfo.cs
+D:\C#\readWrite\readWrite\obj\Debug\netcoreapp2.0\readWrite.dll
+D:\C#\readWrite\readWrite\obj\Debug\netcoreapp2.0\readWrite.pdb
