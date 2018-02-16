@@ -3,136 +3,100 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var csv = require("csvtojson");
+
+//base file source on local machine
 const csvFilePath = "C:/Users/Z003wc1d/WebstormProjects/restAPI/models/FSI/realSample.txt";
 
-
-mongoose.connect('mongodb://localhost:27017/my_database');
+//connect to database on mlab
+mongoose.connect('mongodb://dbuser:dbpass@ds235768.mlab.com:35768/temp');
 
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
+
 //Get the default connection
 var db = mongoose.connection;
 
 //Define table Schema
 var Schema = mongoose.Schema;
 
-var SomeModelSchema = new Schema({
-  //1/31/2017,11:01:00 PM.488,FCG3_Avg_Crrnt_0_FSI1,805.0,SPONT
-    date: Date,
-    time: Date,
-    device: String,
-    value: Number,
-    type: String
+var model_v2Schema = new Schema({
+  timeStamp: String,
+  device: String,
+  value: Number,
+  type: String
 });
-
-// Compile model from schema
-var SomeModel = mongoose.model('SomeModel', SomeModelSchema );
+var model_v2 = mongoose.model('model_v2', model_v2Schema);
 
 // Convert a csv file with csvtojson
 csv({
-  noheader: true,
-  delimiter: ';',
-  headers: ['date','time','device','current_value','type']
-})
+      noheader: true,
+      delimiter: ';',
+      headers: ['date','time','device','current_value','type']
+  })
   .fromFile(csvFilePath)
   .on("end_parsed",function(list_obj){
 
-    list_obj.forEach(function(obj) {
-     console.log(obj);
+      list_obj.forEach(function(obj) {
 
-     // Create an instance of model SomeModel
-     var awesome_instance = new SomeModel({ date: obj.date, time: obj.time,
-                                            device: obj.device, value: obj.current_value,
-                                            type: obj.type});
+           console.log(obj);
+           //Conversion to 24 hour clock format
+           var hour = parseInt(obj.time.slice(0,2));
+           hour += 12;
+           var hh = " ";
+           if(hour == 24){
+              hh = "00";
+           }
+           //Declaration of ISODate attributes (time)
+           else{
+            hh = hour.toString();
+           }
+           var mi = obj.time.slice(3, 5);
+           var ss = obj.time.slice(6, 8);
+           var xyzZ = obj.time.slice(11, 15);
 
-        // Save the new model instance, passing a callback
-    awesome_instance.save(function (err) {
-      if (err) {return handleError(err);}
-      else {
-        console.log('saved');
-      }
+           //Declaration of ISODate attributes (date)
+           var str = obj.date;
+           var yyyy = str.substring(str.lastIndexOf('/')+1, str.length);
+           var mm = str.substring(0, str.indexOf('/'));
+           var dd = str.substring(str.indexOf('/')+1, str.lastIndexOf('/'));
 
-    });
+           //format check for month
+           var month = parseInt(mm);
+           if(month < 10)
+           {
+             mm = '0' + mm;
+           }
+           //format check for date
+           var day = parseInt(dd);
+           if(day < 10)
+           {
+             dd = '0' + dd;
+           }
 
-    })
+           var dateValue = yyyy + '-' + mm + '-' + dd + 'T' + hh + ':' + mi + ':' + ss + xyzZ + 'Z';
 
-   })
+           // Create an instance of model model_v2
+           var awesome_instance = new model_v2({ timeStamp: dateValue,
+                                                  device: obj.device, value: obj.current_value,
+                                                  type: obj.type});
 
+            // Save the new model instance, passing a callback
+            awesome_instance.save(function (err) {
+                if (err) {
+                  return console.log(err);
+                }
+                else {
+                  console.log('saved');
+                }
+            });
+
+      })
+
+  })
 
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Running on port " + port);
 });
-app.get('/', function(req, res) {
-  res.send("Hello Seattle\n");
-  console.log("Running on port " + port);
-});
 
-app.get('/device/:name', function(req, res) {
-
-   // Get /musician/Matt
-   console.log(req.params.name)
-   // => Matt
-   SomeModel.find({device: req.params.name}, function(err, obj) {
-     if (obj) {
-      console.log(obj[0].device);  // 1234
-      console.log(obj[0].value);  // 1234
-
-      res.send({"device": obj[0].device,"value":obj[0].value});
-    }
-   })
-
-
-});
-
-
-
-//var app = express();
-
-/*var myJson = new Schema({
-  request: String,
-  time: Number
-},
-{
-  collection: 'outputJSON'
-});
-
-var Model = mongoose.model('Model', myJson); */
-
-
-/*app.get('/save/:query', cors(), function(req, res){
-  var query = req.params.query;
-  var savedata = new Model({
-    'request': query,
-    'time': Math.floor(Date.now()/1000)
-  }).save(function(err, result){
-    if (err){
-      throw err;
-    }
-    if(result){
-//      res.json(result);
-    }
-  })
-})
-
-app.get('/find/:query', cors(), function(req, res){
-  var query = req.params.query;
-
-  Model.find({
-    'request': query
-  }, function(err, result){
-    if(err){
-      throw err;
-    }
-    if(result) {
-      res.json(result)
-    }
-    else{
-      res.send(JSON.stringify({
-        error: 'ERROR'
-      }))
-    }
-  })
-})
-*/
